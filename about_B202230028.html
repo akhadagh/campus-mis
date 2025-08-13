@@ -1,1 +1,218 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Darko Boamah Joshua | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --primary: #007BFF;
+            --accent: #00c6a7;
+            --bg: #f6f8fb;
+            --card-bg: #fff;
+            --text: #222;
+            --muted: #666;
+            --radius: 18px;
+            --shadow: 0 6px 32px rgba(0,123,255,0.10), 0 2px 8px rgba(0,0,0,0.06);
+        }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
+        .hero {
+            background: linear-gradient(120deg, var(--primary) 60%, var(--accent) 100%);
+            color: #fff;
+            padding: 60px 0 40px 0;
+            text-align: center;
+            box-shadow: 0 4px 24px rgba(0,123,255,0.10);
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #fff;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+            margin-bottom: 18px;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            margin: 0 0 10px 0;
+            letter-spacing: 1px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin: 0 0 18px 0;
+            color: #e3e3e3;
+        }
+        .hero .social {
+            margin-top: 12px;
+        }
+        .hero .social a {
+            display: inline-block;
+            margin: 0 8px;
+            color: #fff;
+            font-size: 1.5rem;
+            transition: color 0.2s;
+            text-decoration: none;
+        }
+        .hero .social a:hover {
+            color: #ffe082;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 30px 18px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            justify-content: center;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 32px 28px;
+            flex: 1 1 340px;
+            min-width: 320px;
+            max-width: 420px;
+            margin-bottom: 16px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-6px) scale(1.02);
+            box-shadow: 0 12px 48px rgba(0,123,255,0.16), 0 4px 16px rgba(0,0,0,0.10);
+        }
+        .card h2 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            border-bottom: 1.5px solid #e3e3e3;
+            padding-bottom: 6px;
+            letter-spacing: 0.5px;
+        }
+        .skills-list, .projects-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .skills-list li {
+            background: linear-gradient(90deg, #e3f0ff 60%, #f4f4f4 100%);
+            color: var(--muted);
+            display: inline-block;
+            margin: 6px 8px 6px 0;
+            padding: 7px 16px;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        .projects-list li {
+            margin-bottom: 14px;
+        }
+        .projects-list a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+        .projects-list a:hover {
+            color: var(--accent);
+        }
+        .contact-info {
+            font-size: 1.07rem;
+            color: var(--muted);
+        }
+        .contact-info a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 18px;
+            background: linear-gradient(90deg, var(--primary) 60%, var(--accent) 100%);
+            color: white;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+            border-radius: 0 0 var(--radius) var(--radius);
+            box-shadow: 0 -2px 12px rgba(0,123,255,0.08);
+            margin-top: 40px;
+        }
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+                gap: 18px;
+                padding: 10px;
+            }
+            .card {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <img src="" alt="Profile Photo" class="avatar">
+        <h1>Darko Boamah Joshua</h1>
+        <p>Aspiring IT Professional | Data Analytics | Networking | Web Development | Database Management</p>
+        <div class="social">
+            <a href="https://github.com/akhadagh/" target="_blank" title="GitHub">&#x1F5C3;</a>
+            <a href="https://linkedin.com/in/darko-boamah-joshua" target="_blank" title="LinkedIn">&#x1F465;</a>
+            <a href="mailto:boamahjoshua60@gmail.com" title="Email">&#x2709;</a>
+        </div>
+    </section>
+    <div class="container">
+        <section class="card">
+            <h2>About Me</h2>
+            <p>
+                I completed Ho-Mawuli School in 2021 where I did general arts. I completed with grade 10. I am currently a passionate Computer Science student  at Koforidua Technical University with a strong foundation in programming, networking, and data science and Analysis. I love solving problems, building innovative solutions, and continuously learning new technologies.
+            </p>
+        </section>
+        <section class="card">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>Python</li>
+                <li>HTML &amp; CSS</li>
+                <li>SQL</li>
+                <li>Networking</li>
+                <li>Data Analysis</li>
+                <li>Database Management</li>
+                <li>GitHub</li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>Projects</h2>
+            <ul class="projects-list">
+                <li>
+                    <a href="#" target="_blank">Personal Portfolio Website</a><br>
+                    <span class="Portfolio-DB-Joshua.html">A responsive website showcasing my skills and projects.</span>
+                </li>
+                <li>
+                    <a href="#" target="_blank">Network Monitoring Tool</a><br>
+                    <span class="Group14A.html">A Python-based tool for monitoring network traffic and security.</span>
+                </li>
+                <li>
+                    <a href="#" target="_blank">A Smart-Hostel Management System web application</a><br>
+                    <span class="Group14A.html">A Python-based tool for monitoring network traffic and security.</span>
+                </li>
+                <li>
+                    <a href="#" target="_blank">Data Analysis Dashboard</a><br>
+                    <span class="project-desc">An interactive dashboard for visualizing and analyzing datasets.</span>
+                </li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <div>Email: <a href="mailto:boamahjoshua60@gmail.com">boamahjoshua60@gmail.com</a></div>
+                <div>LinkedIn: <a href="https://linkedin.com/in/darko-boamah-joshua">linkedin.com/in/darko-boamah-joshua</a></div>
+                <div>GitHub: <a href="https://github.com/akhadagh">github.com/akhadagh</a></div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        &copy; 2025 Darko Boamah Joshua
